@@ -184,6 +184,15 @@ const logout = () => {
               is-desktop-icon-only
             />
           </NavBarItem>
+
+          <NavBarItem
+            :href="route('test')"
+            is-desktop-icon-only
+          >
+            <NavBarItemLabel
+              label="Test"
+            />
+          </NavBarItem>
           <NavBarItem
             is-desktop-icon-only
             @click="logout"

@@ -63,7 +63,7 @@ const submit = e => {
   <component
     :is="is"
     :class="componentClass"
-    class="bg-white flex flex-col"
+    class="bg-white flex flex-col mb-6 overflow-scroll"
     @submit="submit"
   >
     <header

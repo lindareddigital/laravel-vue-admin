@@ -51,7 +51,7 @@ function destroy(id) {
     <SectionMain>
       <SectionTitleLineWithButton
         :icon="mdiAccountKey"
-        title="Permissions"
+        title="Permissions權限"
         main
       >
         <BaseButton

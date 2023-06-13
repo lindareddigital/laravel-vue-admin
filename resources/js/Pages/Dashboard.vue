@@ -18,6 +18,16 @@ import SectionMain from '@/Components/SectionMain.vue'
 import CardBoxWidget from '@/Components/CardBoxWidget.vue'
 import CardBox from '@/Components/CardBox.vue'
 import TableSampleClients from '@/Components/TableSampleClients.vue'
+import TableRoles from '@/Components/Tables/TableRoles.vue'
+import TableAvators from '@/Components/Tables/TableAvators.vue'
+import TableMissions from '@/Components/Tables/TableMissions.vue'
+import TableRewards from '@/Components/Tables/TableRewards.vue'
+import TableUserMissions from '@/Components/Tables/TableUserMissions.vue'
+import TableRewardsAudit from '@/Components/Tables/TableRewardsAudit.vue'
+
+
+
+
 import NotificationBar from '@/Components/NotificationBar.vue'
 import BaseButton from '@/Components/BaseButton.vue'
 import CardBoxTransaction from '@/Components/CardBoxTransaction.vue'
@@ -49,7 +59,9 @@ const transactionBarItems = computed(() => mainStore.history)
 
 
 
-        
+
+
+
       <SectionTitleLineWithButton
         :icon="mdiChartTimelineVariant"
         title="Overview"
@@ -66,81 +78,6 @@ const transactionBarItems = computed(() => mainStore.history)
         />
       </SectionTitleLineWithButton>
 
-      <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6">
-        <CardBoxWidget
-          trend="12%"
-          trend-type="up"
-          color="text-emerald-500"
-          :icon="mdiAccountMultiple"
-          :number="512"
-          label="Clients"
-        />
-        <CardBoxWidget
-          trend="12%"
-          trend-type="down"
-          color="text-blue-500"
-          :icon="mdiCartOutline"
-          :number="7770"
-          prefix="$"
-          label="Sales"
-        />
-        <CardBoxWidget
-          trend="Overflow"
-          trend-type="alert"
-          color="text-red-500"
-          :icon="mdiChartTimelineVariant"
-          :number="256"
-          suffix="%"
-          label="Performance"
-        />
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        <div class="flex flex-col justify-between">
-          <CardBoxTransaction
-            v-for="(transaction,index) in transactionBarItems"
-            :key="index"
-            :amount="transaction.amount"
-            :date="transaction.date"
-            :business="transaction.business"
-            :type="transaction.type"
-            :name="transaction.name"
-            :account="transaction.account"
-          />
-        </div>
-        <div class="flex flex-col justify-between">
-          <CardBoxClient
-            v-for="client in clientBarItems"
-            :key="client.id"
-            :name="client.name"
-            :login="client.login"
-            :date="client.created"
-            :progress="client.progress"
-          />
-        </div>
-      </div>
-
-      <SectionBannerStarOnGitHub />
-
-      <SectionTitleLineWithButton
-        :icon="mdiChartPie"
-        title="Trends overview"
-      />
-
-      <CardBox
-        title="Performance"
-        :icon="mdiFinance"
-        :header-icon="mdiReload"
-        class="mb-6"
-        @header-icon-click="fillChartData"
-      >
-        <div v-if="chartData">
-          <line-chart
-            :data="chartData"
-            class="h-96"
-          />
-        </div>
-      </CardBox>
 
       <SectionTitleLineWithButton
         :icon="mdiAccountMultiple"
@@ -151,16 +88,85 @@ const transactionBarItems = computed(() => mainStore.history)
         color="info"
         :icon="mdiMonitorCellphone"
       >
-        <b>Responsive table.</b> Collapses on mobile
+        <b>NotificationBar</b> Collapses on mobile
       </NotificationBar>
 
       <CardBox
         :icon="mdiMonitorCellphone"
-        title="Responsive table"
+        title="Users"
         has-table
       >
         <TableSampleClients />
+
       </CardBox>
+
+
+      <CardBox
+        :icon="mdiMonitorCellphone"
+        title="Roles"
+        has-table
+      >
+        <TableRoles />
+
+      </CardBox>
+
+      <CardBox
+        :icon="mdiMonitorCellphone"
+        title="Avators"
+        has-table
+      >
+        <TableAvators />
+
+      </CardBox>
+
+
+      <CardBox
+        :icon="mdiMonitorCellphone"
+        title="Missions"
+        has-table
+      >
+        <TableMissions />
+
+      </CardBox>
+
+
+      <CardBox
+        :icon="mdiMonitorCellphone"
+        title="Rewards"
+        has-table
+      >
+        <TableRewards />
+
+      </CardBox>
+
+
+      <CardBox
+        :icon="mdiMonitorCellphone"
+        title="Reward_Audit"
+        has-table
+      >
+        <TableRewardsAudit />
+
+      </CardBox>
+
+
+      <CardBox
+        :icon="mdiMonitorCellphone"
+        title="User_Missions"
+        has-table
+      >
+        <TableUserMissions />
+
+      </CardBox>
+
+
+
+
+
+
+
+
+
     </SectionMain>
   </LayoutAuthenticated>
 </template>

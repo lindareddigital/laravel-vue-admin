@@ -9,30 +9,40 @@ import {
 } from '@mdi/js'
 
 export default [
-  {
-    route: 'dashboard',
-    icon: mdiMonitor,
-    label: 'Dashboard'
-  },
-  {
-    route: 'permission.index',
-    icon: mdiAccountKey,
-    label: 'Permissions'
-  },
-  {
-    route: 'role.index',
-    icon: mdiAccountEye,
-    label: 'Roles'
-  },
-  {
-    route: 'user.index',
-    icon: mdiAccountGroup,
-    label: 'Users'
-  },
-  {
-    href: 'https://github.com/balajidharma/laravel-vue-admin-panel',
-    label: 'GitHub',
-    icon: mdiGithub,
-    target: '_blank'
-  }
-]
+    {
+        route: "dashboard",
+        icon: mdiMonitor,
+        label: "Dashboard",
+    },
+    {
+        route: "permission.index",
+        icon: mdiAccountKey,
+        label: "Permissions",
+    },
+    {
+        route: "role.index",
+        icon: mdiAccountEye,
+        label: "Roles",
+    },
+    {
+        route: "user.index",
+        icon: mdiAccountGroup,
+        label: "Users",
+    },
+    {
+        href: "https://github.com/balajidharma/laravel-vue-admin-panel",
+        label: "GitHub",
+        icon: mdiGithub,
+        target: "_blank",
+    },
+    {
+        route: "test",
+        icon: mdiAccountGroup,
+        label: "Test",
+    },
+    {
+        route: "contactus",
+        icon: mdiAccountGroup,
+        label: "Contactus",
+    },
+];

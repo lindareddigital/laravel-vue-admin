@@ -52,7 +52,7 @@ function destroy(id) {
     <SectionMain>
       <SectionTitleLineWithButton
         :icon="mdiMenu"
-        title="Menus"
+        title="後台設定"
         main
       >
         <BaseButton
@@ -110,7 +110,7 @@ function destroy(id) {
               <th>
                 Description
               </th>
-              <th v-if="can.edit || can.delete || can.manage">Actions</th>
+              <th v-if="can.edit || can.delete || can.manage">設定</th>
             </tr>
           </thead>
 
@@ -159,4 +159,7 @@ function destroy(id) {
       </CardBox>
     </SectionMain>
   </LayoutAuthenticated>
+
+
+
 </template>

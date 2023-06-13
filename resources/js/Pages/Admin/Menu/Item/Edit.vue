@@ -89,7 +89,7 @@ const form = useForm({
             :error="form.errors.name"
           >
             <div class="item-list">
-                You can also enter an internal path such as <em class="placeholder">/home</em> or an external URL such as <em class="placeholder">http://example.com</em>. 
+                You can also enter an internal path such as <em class="placeholder">/home</em> or an external URL such as <em class="placeholder">http://example.com</em>.
                 Add prefix <em class="placeholder">&lt;admin&gt;</em> to link for admin page. Enter <em class="placeholder">&lt;nolink&gt;</em> to display link text only.
             </div>
             <div class="text-red-400 text-sm" v-if="form.errors.uri">
@@ -137,7 +137,7 @@ const form = useForm({
           </FormControl>
         </FormField>
         <FormField
-          label="Weight"
+          label="Weight 排列順序"
           :class="{ 'text-red-400': form.errors.weight }"
         >
           <FormControl

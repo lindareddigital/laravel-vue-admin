@@ -97,7 +97,7 @@ const checked = (isChecked, client) => {
       :key="checkedRow.id"
       class="inline-block px-2 py-1 rounded-sm mr-2 text-sm bg-gray-100 dark:bg-slate-700"
     >
-      {{ checkedRow.name }}
+      {{ checkedRow.name }}Users
     </span>
   </div>
 
@@ -107,15 +107,19 @@ const checked = (isChecked, client) => {
         <th v-if="checkable" />
         <th />
         <th>id</th>
-        <th>external_ref_id</th>
-        <th>user_name</th>
-        <th>user_passwd</th>
-        <th>role_id</th>
-        <th>activated_device</th>
+        <th>type</th>
+        <th>title</th>
+        <th>rule</th>
+        <th>points_credit</th>
+        <th>reward_title_template</th>
+        <th>valid_days</th>
         <th>status</th>
+        <th>mission_startdate</th>
+        <th>mission_enddate</th>
         <th>created_at</th>
         <th>updated_at</th>
-
+        <th>created_by</th>
+        <th>updated_by</th>
       </tr>
     </thead>
     <tbody>
@@ -144,18 +148,11 @@ const checked = (isChecked, client) => {
         </td>
         <td
           data-label="Progress"
-          class="lg:w-32"
         >
-          <progress
-            class="flex w-2/5 self-center lg:w-full"
-            max="100"
-            :value="client.progress"
-          >
-            {{ client.progress }}
-          </progress>
+          {{ client.Progress }}
         </td>
 
-        <td class="before:hidden lg:w-1 whitespace-nowrap">
+         <td class="before:hidden lg:w-1 whitespace-nowrap">
           <BaseButtons
             type="justify-start lg:justify-end"
             no-wrap
@@ -174,12 +171,6 @@ const checked = (isChecked, client) => {
             />
           </BaseButtons>
         </td>
-        <td data-label="City">
-          {{ client.city }}
-        </td>
-        <td data-label="City">
-          {{ client.city }}
-        </td>
         <td
           data-label="Created"
           class="lg:w-1 whitespace-nowrap"
@@ -189,7 +180,8 @@ const checked = (isChecked, client) => {
             :title="client.created"
           >{{ client.created }}</small>
         </td>
-        <td
+
+         <td
           data-label="Created"
           class="lg:w-1 whitespace-nowrap"
         >
@@ -198,6 +190,7 @@ const checked = (isChecked, client) => {
             :title="client.created"
           >{{ client.created }}</small>
         </td>
+
       </tr>
     </tbody>
   </table>
