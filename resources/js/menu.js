@@ -34,15 +34,6 @@ export default [
         label: "GitHub",
         icon: mdiGithub,
         target: "_blank",
-    },
-    {
-        route: "test",
-        icon: mdiAccountGroup,
-        label: "Test",
-    },
-    {
-        route: "contactus",
-        icon: mdiAccountGroup,
-        label: "Contactus",
-    },
+    }
+
 ];

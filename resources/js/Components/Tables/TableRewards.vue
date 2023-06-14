@@ -142,6 +142,15 @@ const checked = (isChecked, client) => {
         <td data-label="City">
           {{ client.city }}
         </td>
+        <td data-label="City">
+          {{ client.city }}
+        </td>
+        <td data-label="City">
+          {{ client.city }}
+        </td>
+        <td data-label="City">
+          {{ client.city }}
+        </td>
         <td
           data-label="Progress"
         >

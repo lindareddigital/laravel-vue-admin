@@ -147,24 +147,32 @@ const checked = (isChecked, client) => {
           {{ client.Progress }}
         </td>
 
-         <td class="before:hidden lg:w-1 whitespace-nowrap">
-          <BaseButtons
-            type="justify-start lg:justify-end"
-            no-wrap
-          >
-            <BaseButton
-              color="info"
-              :icon="mdiEye"
-              small
-              @click="isModalActive = true"
-            />
-            <BaseButton
-              color="danger"
-              :icon="mdiTrashCan"
-              small
-              @click="isModalDangerActive = true"
-            />
-          </BaseButtons>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
         </td>
         <td
           data-label="Created"

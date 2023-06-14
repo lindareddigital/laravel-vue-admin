@@ -181,6 +181,69 @@ const checked = (isChecked, client) => {
           >{{ client.created }}</small>
         </td>
 
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
+        <td
+          data-label="Created"
+          class="lg:w-1 whitespace-nowrap"
+        >
+          <small
+            class="text-gray-500 dark:text-slate-400"
+            :title="client.created"
+          >{{ client.created }}</small>
+        </td>
          <td
           data-label="Created"
           class="lg:w-1 whitespace-nowrap"

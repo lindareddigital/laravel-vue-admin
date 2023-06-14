@@ -26,6 +26,9 @@ import TableUserMissions from '@/Components/Tables/TableUserMissions.vue'
 import TableRewardsAudit from '@/Components/Tables/TableRewardsAudit.vue'
 
 
+// import PillTag from '@/Components/PillTag.vue'
+
+
 
 
 import NotificationBar from '@/Components/NotificationBar.vue'
@@ -60,7 +63,7 @@ const transactionBarItems = computed(() => mainStore.history)
 
 
 
-
+     /*  <PillTag/> */
 
       <SectionTitleLineWithButton
         :icon="mdiChartTimelineVariant"
